@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="resetStyles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script defer src="Logic.js"></script>
+
+    <title>Prime One</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="header-top" class="header-top">
+                <div id="headerTopLang" class="header-top-lang">
+                    <a href="" class="header-top-lang__item active">EN</a>
+                    <a href="" class="header-top-lang__item ">RU</a>
+                    <a href="" class="header-top-lang__item ">ESP</a>
+                </div>
+                <a href="" class="header-top__link">Online ordering</a>
+            </div>
+            <div class="header-bottom">
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list">
+                            <li>
+                                <a href="" class="header-bottom-menu__link">ABOUT</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bottom-menu__link">Menus</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bottom-menu__link">Service Info</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-bottom__column">
+                    <a href="" class="header-logo">
+                        <span class="header-logo__text">NYC'S</span>
+                        <span class="header-logo__image"><img src="pics/logo.png" alt="logo"></span>
+                        <span class="header-logo__text">Catering</span>
+
+                    </a>
+                </div>
+                <div class="header-bottom__column">
+                    <nav class="header-bottom-menu">
+                        <ul class="header-bottom-menu-list header-bottom-menu-list--right">
+                            <li>
+                                <a href="" class="header-bottom-menu__link">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bottom-menu__link">Friends</a>
+                            </li>
+                            <li>
+                                <a href="" class="header-bottom-menu__link">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div id="header-menu__icon" class="header-menu__icon" onclick="menuIconOnClickHandler()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="header-menu" class="header-menu" style="display:none;">
+                <nav class="header-bottom-menu">
+                    <ul class="header-bottom-menu-list header-bottom-menu-list--vertical">
+                        <li>
+                            <a href="" class="header-bottom-menu__link">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-bottom-menu__link">Menus</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-bottom-menu__link">Service Info</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-bottom-menu__link">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-bottom-menu__link">Friends</a>
+                        </li>
+                        <li>
+                            <a href="" class="header-bottom-menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="headerTopLang" class="header-top-lang">
+                    <a href="" class="header-top-lang__item active">EN</a>
+                    <a href="" class="header-top-lang__item">RU</a>
+                    <a href="" class="header-top-lang__item">ESP</a>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+    <main class="content">
+        <article class="private">
+            <div class="private_column">
+                <div class="private_image">
+                </div>
+            </div>
+            <div class="private_column">
+                <div class="private_body">
+                    <div class="private_body_content">
+                        <div class="private-body__tittle">Private catering</div>
+                        <div class="private-body__text">Treat your guests to a beautifully plated dinner, hand-crafted canapes or a casual BBQ.</div>
+                        <div class="private-body-buttons">
+                            <a href="" class="private-body-buttons__item btn btn--white">Get a quote</a>
+                            <a href="" class="private-body-buttons__link menus-link">View menus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="products">
+            <div class="container">
+                <div class="products__column">
+                    <div class="products-item">
+                        <a class="products-item__image">
+                            <img src="/pics/Cattering/corporateCattering.jpg" alt="corporate cattering food">
+                        </a>
+                        <a class="products-item__title">Corporate catering</a>
+                        <div class="products-item__text">We are able to serve events from 2 to 2000 guests and always reasonable prices.</div>
+                        <p> <a class="products-item__button btn btn--black"> Get a quote</a></p>
+                        <p> <a href="" class="products-item__link menus-link menus-link--black ">View menus</a></p>
+                    </div>
+                </div>
+                <div class="products__column">
+                    <div class="products-item">
+                        <a class="products-item__image">
+                            <img src="/pics/Cattering/privateCattering.jpg" alt="private Cattering food">
+                        </a>
+                        <a class="products-item__title">Private catering</a>
+                        <div class="products-item__text">Fresh, seasonal and simple cuisine. Food is our business and our passion.</div>
+                        <p> <a class="products-item__button btn btn--black"> Get a quote</a></p>
+                        <p> <a href="" class="products-item__link menus-link menus-link--black ">View menus</a></p>
+                    </div>
+                </div>
+                <div class="products__column">
+                    <div class="products-item">
+                        <a class="products-item__image">
+                            <img src="/pics/Cattering/weddingCattering.jpg" alt="wedding Cattering food">
+                        </a>
+                        <a class="products-item__title">Wedding catering</a>
+                        <div class="products-item__text">We use only the best organic ingredients and gluten and dairy free cooking.</div>
+                        <p> <a class="products-item__button btn btn--black"> Get a quote</a></p>
+                        <p> <a href="" class="products-item__link menus-link menus-link--black ">View menus</a></p>
+                    </div>
+                </div>
+                <div class="products__column">
+                    <div class="products-item">
+                        <a class="products-item__image">
+                            <img src="/pics/Cattering/onlineOrdering.jpg" alt="online Ordering">
+                        </a>
+                        <a class="products-item__title">Online Ordering</a>
+                        <div class="products-item__text">Successful catering is about organisation, high quality service, and great food.</div>
+                        <p> <a class="products-item__button btn btn--black"> Get a quote</a></p>
+                        <p> <a href="" class="products-item__link menus-link menus-link--black ">View menus</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="whyChooseUs">
+            <div class="whyChooseUs-head">
+                <div class="whyChooseUs-column">
+                    <div class="whyChooseUs-text">Why CHOOSE us?</div>
+                </div>
+                <div class="whyChooseUs-column whyChooseUs-image">
+                </div>
+            </div>
+            <div class="whyChooseUs-body">
+                <div class="whyChooseUs-container container">
+                    <div class="whyChooseUs-column">
+                        <div class="column__icon">
+                            <img src="pics/Why/01.png" alt="flower">
+                        </div>
+                        <div class="column-body">
+                            <div class="column-body__title">Always fresh</div>
+                            <div class="column-body__text">Fresh, seasonal and simple cuisine. Food is our business and our passion.</div>
+                        </div>
+                    </div>
+                    <div class="whyChooseUs-column">
+                        <div class="column__icon ">
+                            <img src="pics/Why/02.png" alt="clock">
+                        </div>
+                        <div class="column-body">
+                            <div class="column-body__title">Reliable AND Flawless</div>
+                            <div class="column-body__text">Successful catering is about organisation, high quality service, and great food.</div>
+                        </div>
+                    </div>
+                    <div class="whyChooseUs-column">
+                        <div class="column__icon">
+                            <img src="pics/Why/03.png" alt="clock">
+                        </div>
+                        <div class="column-body">
+                            <div class="column-body__title">Clean and Healthy</div>
+                            <div class="column-body__text">We use only the best organic ingredients and gluten and dairy free cooking.</div>
+                        </div>
+                    </div>
+                    <div class="whyChooseUs-column">
+                        <div class="column__icon">
+                            <img src="pics/Why/04.png" alt="clock">
+                        </div>
+                        <div class="column-body">
+                            <div class="column-body__title">fits any size and budget</div>
+                            <div class="column-body__text">We are able to serve events from 2 to 2000 guests and always at reasonable prices.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="contacts">
+            <div class="container">
+                <div class="contacts-head">
+                    <div class="head__title">Say hello</div>
+                </div>
+                <div class="contacts-body">
+                    <div class="body-column">
+                        <div class="wrapper">
+                            <div class="body-row">
+                                <div class="body-row__text body-row__text--1">45-35 #B 39th St, Sunnyside, NY 11104</div>
+                            </div>
+                            <div class="body-row">
+                                <div class="body-row__text body-row__text--2">(718) 777-7777</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body-column">
+                        <div class="wrapper">
+                            <div class="body-row">
+                                <a href="mailto:contact@primeone.com" class="body-row__text body-row__text--3">contact@primeone.com</a>
+                            </div>
+                            <div class="body-icons body-row">
+                                <div class="body-icons__item"><img src="pics/Contacts/social/01.png" alt=""></div>
+                                <div class="body-icons__item"><img src="pics/Contacts/social/02.png" alt=""></div>
+                                <div class="body-icons__item"><img src="pics/Contacts/social/03.png" alt=""></div>
+                                <div class="body-icons__item"><img src="pics/Contacts/social/04.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="getIntouch">
+            <div class="getIntouch-body">
+                <div class="getIntouch-body__column getIntouch-body__image">
+                </div>
+                <div class="getIntouch-body__column">
+                    <div class="getIntouch-body-content">
+                        <p class="getIntouch-body__title">get in touch</p>
+
+                        <form action="#" name="touchForm" class="getIntouch-form">
+                            <input class="form__name" name="name" type="text" placeholder="Name">
+                            <input class="form__PersonalContact" name="personalContact" type="text" placeholder="E-mail or phone number">
+                            <textarea id="textarea" class="form__message" autocomplete="off" name="message2" placeholder="Your message"></textarea>
+                            <button class="form__submit btn btn--white" type="submit">send message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-body">
+                <div class="footer-terms">© PrimeOne Catering 2014.<u>Terms & Conditions</u></div>
+                <a href="" class="header-logo">
+                    <span class="header-logo__image"><img src="pics/logo.png" alt="logo"></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
